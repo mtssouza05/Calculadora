@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="foto"><img src="images/perfil.jfif" alt="" width="130" height="130">
+    </div>
+    <h1 id="nome">Mattheus Henrique Souza</h1>
+    <main id="calculadora">
+        <div class="operacoes">
+            <div class="conta"></div>
+        </div>
+
+        <div class="btn-container">
+            <button id="ce">CE</button>
+            <button class="apagar">DEL</button>
+            <button onclick="inserir('/')"><img src="images/divide.png"width="20" height="20" alt=""></button>
+            <button class="numero"onclick="inserir('7')">7</button>
+            <button class="numero" onclick="inserir('8')">8</button>
+            <button class="numero" onclick="inserir('9')">9</button>
+            <button class="multiplicacao" onclick="inserir('*')"><img src="images/multiplication-sign.png" width="14" height="14" alt="">
+            </button>
+            <button class="numero" onclick="inserir('4')">4</button>
+            <button class="numero" onclick="inserir('5')">5</button>
+            <button class="numero" onclick="inserir('6')">6</button>
+            <button class="minus" onclick="inserir('-')"><img src="images/minus.png" width="14" height="14"></button>
+            <button class="numero" onclick="inserir('1')">1</button>
+            <button class="numero" onclick="inserir('2')">2</button>
+            <button class="numero" onclick="inserir('3')">3</button>
+            <button class="plus" onclick="inserir('+')"><img src="images/plus.png" width="14" height="14"></button>
+            <button class="numero" onclick="inserir('0')">0</button>
+            <button class="numero" onclick="inserir('.')">.</button>
+            <button id="igual"><img src="images/equal-mathematical-sign.png" width="14" height="14" alt="" ></button>
+            
+        </div>
+
+
+
+
+    </main>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

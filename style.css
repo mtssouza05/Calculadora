@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: radial-gradient(circle at 100% 100%, #162322 0, #0f1716 25%, #000000 50%, #000000 75%, #000000 100%);
+}
+
+
+
+#foto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-0%, -40%);
+}
+
+#nome{
+    position: absolute;
+    transform: translateY(-270px);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: beige;
+}
+
+#foto img{
+    border-radius: 50%;
+}
+
+#calculadora{
+    width: 400px;
+    padding: 0.8em;
+    border-radius: 2.5%;
+    background-color:#172120;
+    color: #f8efed;
+    display: flex;
+    flex-direction: column;
+}
+
+.operacoes{
+    text-align: right;
+}
+
+.conta{
+    font-size: 1.6em;
+    color: beige;
+    padding: 0.4em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+.resultado{
+    font-size: 1.4em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    color: #151515
+}
+
+.btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+
+.btn-container button{
+    height: 5em;
+    margin: 0.15em;
+    border-radius: 4%;
+    color: beige;
+    background-color:beige;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
+    font-weight: 1000;
+}
+
+.btn-container .numero{
+    background-color:#090e0e;
+    color: whitesmoke;
+    filter: grayscale(0%);
+    opacity: 1;
+
+}
+
+.btn-container button:hover{
+    background-color: rgb(67, 66, 66);
+    border-color: #2b2a2a;
+}
+
+.btn-container #igual{
+    grid-column: span 2;
+
+}
+
+#ce{
+    grid-column: span 2;
+}
+
